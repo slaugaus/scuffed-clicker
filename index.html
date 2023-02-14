@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scuffed Clicker: A Game of Exponential Growth</title>
+    <script defer src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    <script defer src="./main.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="content">
+        <h1>You have <span id="scuffCtr">JavaScript disabled (or the script broke), so you're stuck forever with
+                0</span> scuff(s)</h1>
+        <h3>Generating <span id="spsCtr">0</span> scuff(s) per second</h3>
+        <p>
+            <button id="scuffBtn" type="button">Scuff</button>
+        </p>
+        <details>
+            <summary>How to Play</summary>
+            <ul>
+                <li>Factories generate 1 of the thing above them per owned factory per second.</li>
+                <li>(5 Auto-Scuffer Factories will create 5 Auto-Scuffers per second.)</li>
+                <li>Buying something will raise its price by 10%.</li>
+                <li>Pro tip: Hold Enter to spam click the last button you clicked manually.</li>
+                <li><span class="warn">PROGRESS WILL BE LOST IF YOU RELOAD OR CLOSE THIS PAGE.</span></li>
+                <li><a href="https://en.wikipedia.org/wiki/Scientific_notation#E_notation" target="_blank">
+                        What's up with those e numbers?
+                    </a></li>
+            </ul>
+        </details>
+        <p id="upgrades">
+            <label>1. Auto-Scuffer (<span id="auto1Ctr">0</span>):
+                <button id="auto1Btn" type="button">
+                    Buy (<span id="auto1Cost">10</span> scuffs)
+                </button>
+            </label>
+            <!-- The rest are generated in JS! -->
+        </p>
+    </div>
+    <footer>
+        <details>
+            <summary>Credits</summary>
+            <p><i>Scuffed Clicker: A Game of Exponential Growth</i></p>
+            <p>Made by Austin Slaughter for CSE 121B (JavaScript Language).</p>
+            <p>Numbers formatted with <a href="http://numeraljs.com" target="_blank">NumeralJS</a>. More credits in
+                source code.</p>
+            <p>"Inspired by" <a href="https://ivark.github.io" target="_blank">Antimatter Dimensions</a>,
+                which takes this concept much further.</p>
+        </details>
+        <details id="bottom">
+            <summary>"Scuffed?"</summary>
+            <img src="./scuffed.png" alt="scuffed (adj.): of poor standards or low quality (Urban Dictionary)"
+                id="definition">
+        </details>
+    </footer>
+</body>
+
+</html>
